@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.hibernate.CRUDOpreation.Product" table = "PRODUCT">
+             
+      <id name = "productId" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "productId" column = "Product_Id" type = "int"/>
+      <property name = "productCategory" column = "Product_Category" type = "string"/>
+      <property name = "productDescription" column = "Product_Description" type = "string"/>
+      <property name = "productManufacturer" column = "Product_Manufacturer" type = "string"/>
+      <property name = "productName" column = "Product_Name" type = "string"/>
+      <property name = "productPrice" column = "Product_Price" type = "int"/>
+      <property name = "productUnit" column = "Product_Unit" type = "int"/>
+      
+      
+   </class>
+</hibernate-mapping>

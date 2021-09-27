@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.hibernate.CRUDOpreation.Customer" table = "CUSTOMER">
+             
+      <id name = "customerId" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "firstName" column = "first_name" type = "string"/>
+      <property name = "lastName" column = "last_name" type = "string"/>
+      <property name = "customerPhone" column = "customer_phone" type = "string"/>
+      <property name = "shippingAddressId" column = "shipping_address_id" type = "int"/>
+      <property name = "billingAddressId" column = "billing_address_id" type = "int"/>
+      <property name = "userId" column = "user_id" type = "int"/>
+      <property name = "cartId" column = "cart_id" type = "int"/>
+      
+      
+   </class>
+</hibernate-mapping>
